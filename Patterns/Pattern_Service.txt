@@ -1,0 +1,15 @@
+﻿using BLOXNameSpace.Data;
+using BLOXNameSpace.Data;
+using BLOXNameSpace.BO;
+
+namespace BLOXNameSpace.Service
+{
+    public class BLOXTableNameService: GenericService<BLOXTableNameEO>
+    {
+        public BLOXTableNameService()
+            : base(new BLOXPrefixContext())
+        {
+            
+        }
+    }
+}

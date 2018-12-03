@@ -1,0 +1,9 @@
+﻿using BLOXNameSpace.BO;
+
+namespace BLOXNameSpace.Data
+{
+    public class BLOXTableNameData : GenericRepository<BLOXTableNameEO>
+    {
+        
+    }
+}

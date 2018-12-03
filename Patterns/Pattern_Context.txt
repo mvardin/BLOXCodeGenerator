@@ -1,0 +1,24 @@
+﻿using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
+using BLOXNameSpace.BO;
+
+namespace BLOXNameSpace.Data
+{
+    public class BLOXPrefixContext : DbContext
+    {
+        public BLOXPrefixContext()
+            : base("name=BLOXPrefixContext")
+        {
+            this.Database.Initialize(false);
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            System.Data.Entity.Database.SetInitializer<BLOXPrefixContext>(null);
+        }
+
+		<BLOX::Loop::TableForContext>
+			public virtual DbSet<BLOXTableNameEO> BLOXTableNames { get; set; }
+		</BLOX::Loop::TableForContext>
+    }
+}

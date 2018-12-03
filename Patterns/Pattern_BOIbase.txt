@@ -1,0 +1,14 @@
+﻿using System;
+
+namespace BLOXNameSpace.BO
+{
+    public interface IBaseBO
+    {
+        PKType ID { get; set; }
+        PKType InsertUserAccountId { get; set; }
+        DateTime InsertDateTime { get; set; }
+        PKType UpdateUserAccountId { get; set; }
+        DateTime UpdateDateTime { get; set; }
+        byte Version { get; set; }
+    }
+}
